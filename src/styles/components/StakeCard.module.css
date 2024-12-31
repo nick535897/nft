@@ -1,0 +1,106 @@
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.stakeButton {
+    background: #3b82f6;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.stakeButton:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+.dialog {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialogPanel {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    max-width: 90vw;
+    width: 600px;
+}
+
+.dialogTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.nftGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.nftItem {
+    padding: 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.nftItem:hover {
+    border-color: #3b82f6;
+}
+
+.selected {
+    border-color: #3b82f6;
+    background: #eff6ff;
+}
+
+.nftImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.nftInfo {
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.dialogActions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.confirmButton {
+    background: #3b82f6;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.confirmButton:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
